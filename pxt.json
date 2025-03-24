@@ -9,7 +9,9 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "transmitter.ts",
+        "receiver.ts"
     ],
     "testFiles": [
         "test.ts"
