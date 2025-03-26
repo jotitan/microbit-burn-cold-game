@@ -31,7 +31,7 @@ function ConfigureReceiver() {
         if (isAlreadyFound()) {
             return;
         }
-        if (radio.receivedPacket(2) + 128 > 90) {
+        if (radio.receivedPacket(2) + 90 > 60) {
             // OK
             tagFounded[currentRG] = true;
             basic.showIcon(IconNames.Yes)
@@ -47,8 +47,9 @@ function ConfigureReceiver() {
             basic.showIcon(IconNames.Target)
             return;
         }
-        const signal = radio.receivedPacket(2) + 128;
-        showReceiveLine(Math.floor(signal / 7))
+        //basic.showNumber(radio.receivedPacket(2))
+        const signal = radio.receivedPacket(2) + 90; // 0 - 70
+        showReceiveLine(Math.floor(signal / 5))
     })
 }
 

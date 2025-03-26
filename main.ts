@@ -1,5 +1,3 @@
-// Two cases : bound for position or client who searching position
-
 class Configuration {
     constructor(private isBoundary: boolean = true) {
         new KindConfig((isBoundary: boolean) => this.finishConfig(isBoundary));
@@ -13,7 +11,6 @@ class Configuration {
         }
     }
 }
-
 class KindConfig {
     constructor(next: (isBoudary: boolean) => void, private isBoundary: boolean = true) {
         input.onButtonPressed(Button.A, () => this.changeKind());
@@ -33,5 +30,4 @@ class KindConfig {
         }
     }
 }
-
 new Configuration()
