@@ -28,3 +28,5 @@ radio.setGroup(1) // configure le group 1
 radio.receivedPacket(2) // Récupére la puissance de -128 à -28 du dernier message reçu. Dans les faits on observe plus -90 à -20
 ```
 * L'écran vous permettra d'afficher l'information de distance à l'utilisateur : plus il y a de led allumé par ex, plus on est proche.
+
+Le fichier skeleton.ts vous donne une structure de code pour démarrer.
